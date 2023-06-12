@@ -121,25 +121,24 @@ nav ul.header-links li.header-link:hover {
   .social ul li {
     margin: 0 10px;
   }
-
+  
   .scroll-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 45px;
-  animation: scrollAnimation 1s ease-in-out infinite;
-}
-}
-
-/* Projects */
-.projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 45px;
+    animation: scrollAnimation 1s ease-in-out infinite;
+  }
+  
+  /* Projects */
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
 .title {
   font-size: 24px;
   margin-bottom: 10px;
