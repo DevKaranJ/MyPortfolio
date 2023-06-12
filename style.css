@@ -45,6 +45,7 @@ main {
     padding-right: 29.25rem;
     background: rgba(255, 255, 255, 0.8);
   }
+
   .nav ul.header-links {
     display: none;
   }
@@ -70,6 +71,7 @@ nav ul.header-links li.header-link:hover {
 }
 
 /* Heading First page */
+
 /* Mobile devices */
 @media (max-width: 768px) {
   .intro {
@@ -125,9 +127,11 @@ nav ul.header-links li.header-link:hover {
   0% {
     transform: translateY(0);
     opacity: 0;
+
   }
   50% {
     transform: translateY(-10px);
+
     opacity: 0.5;
   }
   100% {
@@ -267,7 +271,7 @@ nav ul.header-links li.header-link:hover {
   .aboutMe {
     margin-top: 1rem;
     text-align: center;
-    font-family: Inter;
+    font-family: "inter", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
@@ -363,7 +367,7 @@ nav ul.header-links li.header-link:hover {
   .contact-info {
     width: 327px;
     height: 363px;
-    font-family: Inter;
+    font-family: "inter", sans-serif;
     font-size: 40px;
     font-weight: 700;
     line-height: 52px;
@@ -493,12 +497,12 @@ nav ul.header-links li.header-link:hover {
   .about-me h2 {
     width: 447px;
     height: 48px;
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-    color: #172B4D;
+    color: #172B4d;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -512,12 +516,12 @@ nav ul.header-links li.header-link:hover {
   .about-me p {
     width: 920px;
     height: 96px;
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    color: #42526E;
+    color: #42526e;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -562,7 +566,7 @@ nav ul.header-links li.header-link:hover {
   .about-me h2 {
     width: 447px;
     height: 120px;
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -571,19 +575,19 @@ nav ul.header-links li.header-link:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #172B4D;
+    color: #172B4d;
   }
 
   .about-me p {
     width: 60%;
     height: 130px;
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
     text-align: center;
-    color: #42526E;
+    color: #42526e;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -603,7 +607,7 @@ nav ul.header-links li.header-link:hover {
     display: block;
     position: absolute;
     top: 118rem;
-    right: 0px;
+    right: 1px;
     width: 15.25rem;
     height: 16.94rem;
     background-image: url(./resources/desktoptri.svg);
@@ -632,7 +636,7 @@ nav ul.header-links li.header-link:hover {
   .contact-info {
     width: 463px;
     height: 256px;
-    font-family: 'Inter';
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -748,4 +752,3 @@ nav ul.header-links li.header-link:hover {
     display: none;
   }
 }
-
