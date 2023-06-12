@@ -121,7 +121,7 @@ nav ul.header-links li.header-link:hover {
   .social ul li {
     margin: 0 10px;
   }
-}
+
   .scroll-button {
     display: flex;
     flex-direction: row;
@@ -129,7 +129,7 @@ nav ul.header-links li.header-link:hover {
     margin-top: 45px;
     animation: scrollAnimation 1s ease-in-out infinite;
   }
-  
+
   /* Projects */
   .projects {
     display: flex;
@@ -138,14 +138,15 @@ nav ul.header-links li.header-link:hover {
     align-items: center;
     text-align: center;
   }
-  
-.title {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
 
-.projects img {
-  max-width: 100%;
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .projects img {
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 375px) {
