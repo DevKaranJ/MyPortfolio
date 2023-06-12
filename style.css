@@ -121,7 +121,7 @@ nav ul.header-links li.header-link:hover {
   .social ul li {
     margin: 0 10px;
   }
-  
+}
   .scroll-button {
     display: flex;
     flex-direction: row;
@@ -146,7 +146,6 @@ nav ul.header-links li.header-link:hover {
 
 .projects img {
   max-width: 100%;
-}
 }
 
 @media (min-width: 375px) {
