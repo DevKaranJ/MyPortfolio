@@ -121,21 +121,23 @@ nav ul.header-links li.header-link:hover {
   .social ul li {
     margin: 0 10px;
   }
+  
   @keyframes scrollAnimation {
     0% {
       transform: translateY(0);
       opacity: 0;
     }
+
     50% {
       transform: translateY(-10px);
       opacity: 0.5;
     }
+
     100% {
       transform: translateY(-20px);
       opacity: 1;
     }
   }
-  
   .scroll-button {
     display: flex;
     flex-direction: row;
@@ -144,6 +146,7 @@ nav ul.header-links li.header-link:hover {
     animation: scrollAnimation 1s ease-in-out infinite;
   }
 }
+
 /* Projects */
 .projects {
   display: flex;
