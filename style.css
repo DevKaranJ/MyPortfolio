@@ -147,6 +147,7 @@ nav ul.header-links li.header-link:hover {
 .projects img {
   max-width: 100%;
 }
+}
 
 @media (min-width: 375px) {
   .project-card {
