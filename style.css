@@ -121,30 +121,31 @@ nav ul.header-links li.header-link:hover {
   .social ul li {
     margin: 0 10px;
   }
-  
-  @keyframes scrollAnimation {
-    0% {
-      transform: translateY(0);
-      opacity: 0;
-    }
 
-    50% {
-      transform: translateY(-10px);
-      opacity: 0.5;
-    }
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
 
-    100% {
-      transform: translateY(-20px);
-      opacity: 1;
-    }
+  50% {
+    transform: translateY(-10px);
+    opacity: 0.5;
   }
-  .scroll-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 45px;
-    animation: scrollAnimation 1s ease-in-out infinite;
+
+  100% {
+    transform: translateY(-20px);
+    opacity: 1;
   }
+}
+
+.scroll-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 45px;
+  animation: scrollAnimation 1s ease-in-out infinite;
+}
 }
 
 /* Projects */
