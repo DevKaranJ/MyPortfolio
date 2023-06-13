@@ -7,7 +7,6 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   font-family: 'inter', sans-serif;
 }
 
@@ -23,15 +22,21 @@ main {
   font-size: 2rem;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .hammenu {
     opacity: 0;
     pointer-events: none;
   }
 }
 
+@media (min-width: 768px) {
+  body main header .nav .hammenu {
+    display: none;
+  }
+}
+
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body main header .nav .hammenu {
     display: flex;
     justify-content: flex-end;
@@ -76,9 +81,21 @@ nav ul.header-links li.header-link:hover {
 @media (max-width: 768px) {
   .intro {
     background-image: url(./resources/background.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    padding-top: 200px;
   }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
   .first-heading h1 {
     text-align: center;
@@ -221,7 +238,7 @@ nav ul.header-links li.header-link:hover {
 }
 
 /* About Me */
-@media (max-width: 375px) {
+@media (min-width: 375px) {
   .about-me {
     display: flex;
     flex-direction: column;
@@ -269,7 +286,7 @@ nav ul.header-links li.header-link:hover {
 }
 
 /* Skills */
-@media (max-width: 375px) {
+@media (min-width: 375px) {
   .card-works .card {
     display: flex;
     flex-direction: column;
@@ -342,23 +359,18 @@ nav ul.header-links li.header-link:hover {
 }
 
 /* Contact Form */
-@media (max-width: 375px) {
+@media (min-width: 375px) {
   .contact-form {
     margin-top: 30px;
   }
 
   .contact-info {
-    width: 327px;
-    height: 363px;
-    font-family: "inter", sans-serif;
-    font-size: 40px;
     font-weight: 700;
+    font-size: 40px;
     line-height: 52px;
-    letter-spacing: 0.15em;
     text-align: center;
     color: #172b4d;
-    margin-left: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
   }
 
   .formspree {
@@ -370,6 +382,8 @@ nav ul.header-links li.header-link:hover {
   }
 
   input[name="email"] {
+    display: inline-block;
+    margin-right: 60px;
     background: #fff;
     border: 1px solid #d0d9d4;
     border-radius: 4px;
@@ -379,15 +393,19 @@ nav ul.header-links li.header-link:hover {
   }
 
   input[name="name"] {
+    display: inline-block;
     background: #fff;
     border: 1px solid #d0d9d4;
     border-radius: 4px;
     width: 100%;
     height: 48px;
     padding: 25px;
+    margin-right: 60px;
   }
 
   textarea[name="message"] {
+    display: inline-block;
+    margin-right: 60px;
     height: 100px;
     background: #fff;
     width: 100%;
@@ -401,6 +419,19 @@ nav ul.header-links li.header-link:hover {
   .submit-button {
     margin: 35px;
     border: none;
+    margin-top: 9px;
+  }
+
+  .imgframe {
+    display: block;
+    position: relative;
+    top: -16rem;
+    right: -164px;
+    width: 4.25rem;
+    height: 10.94rem;
+    background-size: cover;
+    background-position: right bottom;
+}
   }
 
   .email-id {
@@ -412,17 +443,15 @@ nav ul.header-links li.header-link:hover {
     font-weight: 400;
     line-height: 24px;
   }
-}
+
+/*desktop version query*/
 
 @media (min-width: 768px) {
   .intro {
     background: url(./resources/background.svg) no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 200px;
+    background-position: center;
   }
 
   .first-heading h1 {
@@ -517,7 +546,8 @@ nav ul.header-links li.header-link:hover {
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
-    margin-top: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     line-height: 24px;
     display: flex;
     align-items: center;
@@ -532,7 +562,7 @@ nav ul.header-links li.header-link:hover {
 
   .project-card {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -542,8 +572,8 @@ nav ul.header-links li.header-link:hover {
   }
 
   .about-me {
-    margin-top: 70px;
-    margin-bottom: 100px;
+    margin-top: -60px;
+    margin-bottom: 120px;
   }
 
   .about-me h2 {
@@ -580,16 +610,16 @@ nav ul.header-links li.header-link:hover {
   .bottom-triangle img {
     display: block;
     position: absolute;
-    top: 129rem;
+    top: 2.5rem;
     left: -35px;
-    width: 18.94rem;
+    width: 14rem;
     height: 11.25rem;
   }
 
   .top-desktop-triangle {
     display: block;
     position: absolute;
-    top: 118rem;
+    top: 2.5rem;
     right: 1px;
     width: 15.25rem;
     height: 16.94rem;
@@ -600,7 +630,7 @@ nav ul.header-links li.header-link:hover {
   .card-works {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .card {
@@ -625,6 +655,8 @@ nav ul.header-links li.header-link:hover {
     font-size: 30px;
     line-height: 52px;
     text-align: left;
+    margin-bottom: -40px;
+    ;
   }
 
   .language-class {
