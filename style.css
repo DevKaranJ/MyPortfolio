@@ -97,7 +97,7 @@ nav ul.header-links li.header-link:hover {
     padding: 0;
     overflow-x: hidden;
   }
-  
+
   .first-heading h1 {
     text-align: center;
     font-size: 40px;
@@ -433,7 +433,7 @@ nav ul.header-links li.header-link:hover {
     background-size: cover;
     background-position: right bottom;
   }
-  
+
   .email-id {
     color: #42526e;
     display: flex;
@@ -445,8 +445,8 @@ nav ul.header-links li.header-link:hover {
   }
 }
 
-  /* desktop version query */
-  
+/* desktop version query */
+
 @media (min-width: 768px) {
   .intro {
     background: url(./resources/background.svg) no-repeat;
