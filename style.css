@@ -423,7 +423,7 @@ nav ul.header-links li.header-link:hover {
     margin-top: 9px;
   }
 
-  imgframe {
+  .imgframe {
     display: block;
     position: relative;
     top: -16rem;
@@ -443,8 +443,10 @@ nav ul.header-links li.header-link:hover {
     font-weight: 400;
     line-height: 24px;
   }
-  
+}
+
   /* desktop version query */
+  
 @media (min-width: 768px) {
   .intro {
     background: url(./resources/background.svg) no-repeat;
