@@ -7,6 +7,7 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
+  - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -33,6 +34,19 @@
 - HTML.
 - CSS.
 - Figma.
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+> The following are the key features of the application.
+
+- **[Header section including logo and hamburger button]**
+- **[Headline ]**
+- **[Works ]**
+- **[About myself]**
+- **[Contact form]**
+
 
 <!-- GETTING STARTED -->
 
