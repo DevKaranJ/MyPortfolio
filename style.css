@@ -391,6 +391,12 @@ nav ul.header-links li.header-link:hover {
     width: 100%;
     height: 48px;
     padding: 25px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
   }
 
   input[name="name"] {
@@ -402,6 +408,12 @@ nav ul.header-links li.header-link:hover {
     height: 48px;
     padding: 25px;
     margin-right: 60px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
   }
 
   textarea[name="message"] {
@@ -415,6 +427,13 @@ nav ul.header-links li.header-link:hover {
     resize: both;
     overflow: auto;
     padding: 25px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1px;
+    text-align: left;
+    color: #42526e;
   }
 
   .submit-button {
@@ -726,7 +745,6 @@ nav ul.header-links li.header-link:hover {
     flex-direction: column;
     gap: 12px;
     margin: 0 30px 0 24px;
-    place-items: center;
   }
 
   input[name="email"] {
@@ -745,6 +763,9 @@ nav ul.header-links li.header-link:hover {
     width: 100%;
     height: 48px;
     padding: 25px;
+    font-family: 'inter', sans-serif;
+    font-style: italic;
+    font-weight: 400;
   }
 
   textarea[name="message"] {

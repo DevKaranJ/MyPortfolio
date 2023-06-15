@@ -47,7 +47,6 @@
 - **[About myself]**
 - **[Contact form]**
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
