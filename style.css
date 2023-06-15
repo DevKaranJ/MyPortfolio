@@ -4,6 +4,7 @@
   padding: 0;
 }
 
+html,
 body {
   margin: 0;
   padding: 0;
@@ -63,12 +64,24 @@ nav ul.header-links {
   justify-content: center;
   gap: 8%;
   font-size: 2vw;
+  padding: 8%;
 }
 
 nav ul.header-links li.header-link {
-  font-weight: bold;
-  color: #333;
   cursor: pointer;
+  height: 20px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #344563;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 nav ul.header-links li.header-link:hover {
@@ -139,14 +152,29 @@ nav ul.header-links li.header-link:hover {
   .social ul li {
     margin: 0 10px;
   }
-
-  .scroll-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 45px;
-    animation: scrollAnimation 1s ease-in-out infinite;
+/*scroll animation*/
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
   }
+  50% {
+    transform: scale(1.2); /* Adjust the desired zoom level */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*scroll ani end */
+
+.scroll-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 45px;
+  animation: zoomInOut 1s infinite;
+}
+
+/*animation end */
 
   /* Projects */
   .projects {
@@ -160,6 +188,7 @@ nav ul.header-links li.header-link:hover {
   .title {
     font-size: 24px;
     margin-bottom: 10px;
+    margin-top: 25px;
   }
 
   .projects img {
@@ -469,10 +498,9 @@ nav ul.header-links li.header-link:hover {
 @media (min-width: 768px) {
   .intro {
     background: url(./resources/background.svg) no-repeat;
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  }
+  }  
 
   .first-heading h1 {
     text-align: center;
@@ -514,6 +542,9 @@ nav ul.header-links li.header-link:hover {
 
   .social ul li {
     margin: 0 10px;
+  }
+  .scroll-button {
+    display: flex;
   }
 }
 
@@ -573,7 +604,9 @@ nav ul.header-links li.header-link:hover {
     align-items: center;
     transition: box-shadow 0.3s ease;
   }
-
+/*resume button*/
+  
+/*resume ani end */
   .resume-button img {
     position: absolute;
     left: 50%;
