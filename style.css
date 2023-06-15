@@ -139,7 +139,7 @@ nav ul.header-links li.header-link:hover {
   .social ul li {
     margin: 0 10px;
   }
-
+/*scroll button A&T*/
   .scroll-button {
     display: flex;
     flex-direction: row;
@@ -147,7 +147,7 @@ nav ul.header-links li.header-link:hover {
     margin-top: 45px;
     animation: scrollAnimation 1s ease-in-out infinite;
   }
-
+/*paste your code above this line and remove previus one */
   /* Projects */
   .projects {
     display: flex;
@@ -573,7 +573,9 @@ nav ul.header-links li.header-link:hover {
     align-items: center;
     transition: box-shadow 0.3s ease;
   }
+/*resume button A&T*/
 
+/*paste your code above this line*/
   .resume-button img {
     position: absolute;
     left: 50%;
