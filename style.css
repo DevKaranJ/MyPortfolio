@@ -823,21 +823,21 @@ nav ul.header-links li.header-link:hover {
   }
 
   .submit-button {
-    margin: 35px 175px 35px 0px;
+    margin: 35px 175px 35px 0;
     border: none;
   }
-
+  
   .email-id {
     display: none;
   }
-
+  
   .contact-form {
     display: flex;
     padding: 100px;
     padding-bottom: 20px;
     margin-bottom: -200px;
   }
-
+  
   .desktop-img-bottom {
     display: flex;
     justify-content: center;
@@ -851,19 +851,20 @@ nav ul.header-links li.header-link:hover {
   .bottom1 {
     margin-right: 455px;
   }
-
-@media (max-width: 767px) {
-  .bottom-right {
-    display: none;
+  
+  @media (max-width: 767px) {
+    .bottom-right {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .bottom-right {
+      padding-top: 10px;
+      width: auto;
+      height: auto;
+      display: block;
+    }
   }
 }
-
-@media (min-width: 768px) {
-  .bottom-right {
-    padding-top: 10px;
-    width: auto;
-    height: auto;
-    display: block; /* Add display: block to override display: none */
-  }
-}
-}
+  
