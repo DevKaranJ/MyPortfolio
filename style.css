@@ -156,18 +156,9 @@ nav ul.header-links li.header-link:hover {
   .social ul li {
     margin: 0 10px;
   }
+
 /*scroll animation*/
-@keyframes zoomInOut {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2); /* Adjust the desired zoom level */
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+
 /*scroll ani end */
 
 .scroll-button {
@@ -181,6 +172,7 @@ nav ul.header-links li.header-link:hover {
 /*animation end */
 
   /* Projects */
+
   .projects {
     display: flex;
     flex-direction: column;
@@ -619,9 +611,11 @@ nav ul.header-links li.header-link:hover {
     align-items: center;
     transition: box-shadow 0.3s ease;
   }
+  
 /*resume button*/
   
 /*resume ani end */
+
   .resume-button img {
     position: absolute;
     left: 50%;
