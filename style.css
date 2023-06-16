@@ -195,13 +195,13 @@ nav ul.header-links li.header-link:hover {
   }
 }
 
-  .project {
-    width: 20.44rem;
-    height: 29.48rem;
-    border: 1px solid #d0d9d4;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
+.project {
+  width: 20.44rem;
+  height: 29.48rem;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-title {
@@ -611,7 +611,7 @@ nav ul.header-links li.header-link:hover {
     transition: box-shadow 0.3s ease;
   }
 
-  /* resume button*/
+  /* resume button */
 
   /* resume ani end */
 
