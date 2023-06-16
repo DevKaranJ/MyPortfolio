@@ -611,10 +611,10 @@ nav ul.header-links li.header-link:hover {
     align-items: center;
     transition: box-shadow 0.3s ease;
   }
+
+/* resume button*/
   
-/*resume button*/
-  
-/*resume ani end */
+/* resume ani end */
 
   .resume-button img {
     position: absolute;
@@ -786,7 +786,7 @@ nav ul.header-links li.header-link:hover {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin: 0px -145px 0 82px;
+    margin:1px -145px 1px 82px;
   }
 
   input[name="email"] {
@@ -846,12 +846,11 @@ nav ul.header-links li.header-link:hover {
   
   .bottomleft {
     display: flex;
-    padding-right: 0px;
   }
   
   .bottom1 {
-  margin-right: 455px;
-}
+    margin-right: 455px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -862,7 +861,6 @@ nav ul.header-links li.header-link:hover {
 
 @media (min-width: 768px) {
   .bottom-right {
-    padding-right: 0px;
     padding-top: 10px;
     width: auto;
     height: auto;
