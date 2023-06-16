@@ -495,27 +495,33 @@ nav ul.header-links li.header-link:hover {
     font-weight: 400;
     line-height: 24px;
   }
+
+  .desktop-img-bottom {
+    display: none;
+  }
 }
 
 /* desktop version query */
 
 @media (min-width: 768px) {
   .bck {
-    background: url(./resources/background.svg);
+    background: url(./resources/desktop\ background.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 200px;
-    background-position: 41px center;
-  }  
+    padding-top: 198px;
+    padding-left: 187px;
+    padding-right: 122px;
+    background-position: center;
+} 
 
   .first-heading h1 {
     text-align: center;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 58px;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 60px;
     color: #172b4d;
-    max-width: 768px; /* Limit the maximum width to 768px */
-    margin: 0 auto; 
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .first-heading h1 span {
@@ -528,9 +534,8 @@ nav ul.header-links li.header-link:hover {
     font-weight: 400;
     line-height: 28px;
     color: #172b4d;
-    max-width: 768px; /* Limit the maximum width to 768px */
-    margin: 0 auto; /* Center horizontally */
-    padding: 0 20px; /* Add some horizontal padding */
+    margin: 0 auto;
+    padding: 0 20px;
   }
 
   .content {
@@ -710,12 +715,12 @@ nav ul.header-links li.header-link:hover {
   }
 
   .contact-info {
-    width: 463px;
-    height: 256px;
+    width: 300px;
+    height: 156px;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 52px;
     text-align: left;
     margin-bottom: -40px;
@@ -787,7 +792,7 @@ nav ul.header-links li.header-link:hover {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin: 0 30px 0 24px;
+    margin: 0px -145px 0 82px;
   }
 
   input[name="email"] {
@@ -820,14 +825,53 @@ nav ul.header-links li.header-link:hover {
     resize: both;
     overflow: auto;
     padding: 25px;
+    line-height: 25px;
   }
 
   .submit-button {
-    margin: 35px;
+    margin: 35px 175px 35px 0px;
     border: none;
   }
 
   .email-id {
     display: none;
+  }
+
+  .contact-form {
+    display: flex;
+    padding: 100px;
+    padding-bottom: 20px;
+    margin-bottom: -200px;
+  }
+
+  .desktop-img-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  
+  .bottomleft {
+    display: flex;
+    padding-right: 0px;
+  }
+  
+  .bottom1 {
+  margin-right: 455px;
+}
+}
+
+@media (max-width: 767px) {
+  .bottom-right {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .bottom-right {
+    padding-right: 0px;
+    padding-top: 10px;
+    width: auto;
+    height: auto;
+    display: block; /* Add display: block to override display: none */
   }
 }
