@@ -156,10 +156,7 @@ nav ul.header-links li.header-link:hover {
   .social ul li {
     margin: 0 10px;
   }
-
-/*scroll animation*/
-
-/*scroll ani end */
+}
 
 .scroll-button {
   display: flex;
@@ -169,27 +166,24 @@ nav ul.header-links li.header-link:hover {
   animation: zoomInOut 1s infinite;
 }
 
-/*animation end */
+/* Projects */
 
-  /* Projects */
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-  .projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
 
-  .title {
-    font-size: 24px;
-    margin-bottom: 10px;
-    margin-top: 25px;
-  }
-
-  .projects img {
-    max-width: 100%;
-  }
+.projects img {
+  max-width: 100%;
 }
 
 @media (min-width: 375px) {
@@ -199,6 +193,8 @@ nav ul.header-links li.header-link:hover {
     gap: 20px;
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
 
   .project {
     width: 20.44rem;
@@ -208,7 +204,6 @@ nav ul.header-links li.header-link:hover {
     display: flex;
     flex-direction: column;
   }
-}
 
 .project-title {
   display: grid;
@@ -491,6 +486,10 @@ nav ul.header-links li.header-link:hover {
   .desktop-img-bottom {
     display: none;
   }
+
+  .bottom-right {
+    display: none;
+  }
 }
 
 /* desktop version query */
@@ -504,7 +503,7 @@ nav ul.header-links li.header-link:hover {
     padding-left: 187px;
     padding-right: 122px;
     background-position: center;
-} 
+  } 
 
   .first-heading h1 {
     text-align: center;
@@ -550,6 +549,7 @@ nav ul.header-links li.header-link:hover {
   .social ul li {
     margin: 0 10px;
   }
+
   .scroll-button {
     display: flex;
   }
@@ -612,9 +612,9 @@ nav ul.header-links li.header-link:hover {
     transition: box-shadow 0.3s ease;
   }
 
-/* resume button*/
+  /* resume button*/
   
-/* resume ani end */
+  /* resume ani end */
 
   .resume-button img {
     position: absolute;
@@ -786,7 +786,7 @@ nav ul.header-links li.header-link:hover {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin:1px -145px 1px 82px;
+    margin: 1px -145px 1px 82px;
   }
 
   input[name="email"] {
@@ -851,7 +851,6 @@ nav ul.header-links li.header-link:hover {
   .bottom1 {
     margin-right: 455px;
   }
-}
 
 @media (max-width: 767px) {
   .bottom-right {
@@ -866,4 +865,5 @@ nav ul.header-links li.header-link:hover {
     height: auto;
     display: block; /* Add display: block to override display: none */
   }
+}
 }
