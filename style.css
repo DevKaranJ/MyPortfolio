@@ -195,7 +195,6 @@ nav ul.header-links li.header-link:hover {
   }
 }
 
-
   .project {
     width: 20.44rem;
     height: 29.48rem;
@@ -203,7 +202,7 @@ nav ul.header-links li.header-link:hover {
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-  }
+}
 
 .project-title {
   display: grid;
@@ -503,7 +502,7 @@ nav ul.header-links li.header-link:hover {
     padding-left: 187px;
     padding-right: 122px;
     background-position: center;
-  } 
+  }
 
   .first-heading h1 {
     text-align: center;
@@ -613,7 +612,7 @@ nav ul.header-links li.header-link:hover {
   }
 
   /* resume button*/
-  
+
   /* resume ani end */
 
   .resume-button img {
@@ -826,38 +825,38 @@ nav ul.header-links li.header-link:hover {
     margin: 35px 175px 35px 0;
     border: none;
   }
-  
+
   .email-id {
     display: none;
   }
-  
+
   .contact-form {
     display: flex;
     padding: 100px;
     padding-bottom: 20px;
     margin-bottom: -200px;
   }
-  
+
   .desktop-img-bottom {
     display: flex;
     justify-content: center;
     align-items: baseline;
   }
-  
+
   .bottomleft {
     display: flex;
   }
-  
+
   .bottom1 {
     margin-right: 455px;
   }
-  
+
   @media (max-width: 767px) {
     .bottom-right {
       display: none;
     }
   }
-  
+
   @media (min-width: 768px) {
     .bottom-right {
       padding-top: 10px;
@@ -867,4 +866,3 @@ nav ul.header-links li.header-link:hover {
     }
   }
 }
-  
