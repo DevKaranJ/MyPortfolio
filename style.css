@@ -65,7 +65,7 @@ nav ul.header-links {
   gap: 8%;
   font-size: 2vw;
   padding: 8%;
-  margin-top: -13rem;
+  margin-top: -15rem;
 }
 
 nav ul.header-links li.header-link {
@@ -174,6 +174,7 @@ nav ul.header-links li.header-link:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  
 }
 
 .title {
@@ -493,15 +494,17 @@ nav ul.header-links li.header-link:hover {
 
 /* desktop version query */
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .bck {
     background: url(./resources/desktop\ background.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 198px;
-    padding-left: 187px;
-    padding-right: 122px;
+    padding-top: 238px;
+    padding-left: 291px;
+    padding-right: 258px;
     background-position: center;
+}
+
   }
 
   .first-heading h1 {
@@ -552,17 +555,16 @@ nav ul.header-links li.header-link:hover {
   .scroll-button {
     display: flex;
   }
-}
 
 /* First page */
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .projects img {
     display: none;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .about-me h2 {
     width: 447px;
     height: 48px;
@@ -857,7 +859,7 @@ nav ul.header-links li.header-link:hover {
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .bottom-right {
       padding-top: 10px;
       width: auto;
