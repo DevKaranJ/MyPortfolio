@@ -908,3 +908,9 @@ nav ul.header-links li.header-link:hover {
     height: 16.94rem;
     }
   }
+
+  @media (min-width: 375px){
+    .socialtop {
+      display: none;
+    }
+  }
