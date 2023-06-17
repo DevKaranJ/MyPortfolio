@@ -212,17 +212,18 @@ nav ul.header-links li.header-link:hover {
 }
 
 .project-title h3 {
-  font-family: 'poppins', sans-serif;
-  font-style: bold;
-  color: #172b4d;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  color: #172B4D;
   line-height: 32px;
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: bold;
   text-align: center;
   margin-top: 20px;
   height: 57px;
   width: 337px;
 }
+
 
 .project-title .language ul {
   display: flex;
