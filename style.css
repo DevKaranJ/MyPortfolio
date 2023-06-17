@@ -92,17 +92,12 @@ nav ul.header-links li.header-link:hover {
 /* Heading First page */
 
 /* Mobile devices */
-@media (max-width: 768px) {
+@media (min-width: 375px) {
   .bck {
-    background-image: url(./resources/background.svg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: normal;
-    background-size: 83%;
+    background-image: url(./resources/header-illsutration-mobile@2x.png);
+    background-size: cover;
+    background-position: center;
     padding-top: 200px;
-    background-repeat: no-repeat;
-    background-position: 41px center;
   }
 
   html,
@@ -174,13 +169,19 @@ nav ul.header-links li.header-link:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  
 }
 
 .title {
-  font-size: 24px;
-  margin-bottom: 10px;
-  margin-top: 25px;
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 447px;
+  height: 48px;
+  margin-top: 95px;
+  color: #172b4d;
 }
 
 .projects img {
@@ -197,12 +198,12 @@ nav ul.header-links li.header-link:hover {
 }
 
 .project {
-  width: 20.44rem;
-  height: 29.48rem;
-  border: 1px solid #d0d9d4;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
+    width: 20rem;
+    height: 29rem;
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-title {
@@ -212,12 +213,16 @@ nav ul.header-links li.header-link:hover {
 }
 
 .project-title h3 {
+  font-family: 'poppins';
+  font-style: bold;
+  color: #172b4d;
   line-height: 32px;
   font-size: 24px;
   font-weight: 600;
   text-align: center;
   margin-top: 20px;
-  color: #3a4a42;
+  height: 57px;
+  width: 337px;
 }
 
 .project-title .language ul {
@@ -494,18 +499,20 @@ nav ul.header-links li.header-link:hover {
 
 /* desktop version query */
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .bck {
-    background: url(./resources/desktop\ background.svg);
+    background: url(./resources/Header-llustration-desktop@2x.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 238px;
-    padding-left: 291px;
+    padding-top: 204px;
+    padding-left: 260px;
     padding-right: 258px;
     background-position: center;
 }
 
-  }
+.myrecentworkline {
+  display: none;
+}
 
   .first-heading h1 {
     text-align: center;
@@ -513,8 +520,10 @@ nav ul.header-links li.header-link:hover {
     font-weight: 800;
     line-height: 60px;
     color: #172b4d;
-    margin-top: 10px;
+    margin-top: 14px;
     margin-bottom: 10px;
+    width: 595px;
+    height: 136px;
   }
 
   .first-heading h1 span {
@@ -529,6 +538,9 @@ nav ul.header-links li.header-link:hover {
     color: #172b4d;
     margin: 0 auto;
     padding: 0 20px;
+    width: 546px;
+    height: 316px;
+    margin-bottom: -40px;
   }
 
   .content {
@@ -539,6 +551,8 @@ nav ul.header-links li.header-link:hover {
   .social {
     display: flex;
     justify-content: center;
+    position: relative;
+    top: 290px;
   }
 
   .social ul {
@@ -549,12 +563,29 @@ nav ul.header-links li.header-link:hover {
   }
 
   .social ul li {
-    margin: 0 10px;
+    margin: 0 15px;
   }
 
   .scroll-button {
     display: flex;
   }
+
+  .socialtop {
+    display: flex;
+    justify-content: center;
+}
+
+.socialtop ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 1px;
+}
+
+.socialtop ul li {
+  margin: 0 15px;
+}
+}
 
 /* First page */
 
@@ -564,7 +595,7 @@ nav ul.header-links li.header-link:hover {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .about-me h2 {
     width: 447px;
     height: 48px;
@@ -625,7 +656,12 @@ nav ul.header-links li.header-link:hover {
 
   .project-card {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    height: 1000px;
+    width: 950px;
+    left: -27px;
+    top: 35px;
+    border-radius: 0;
   }
 }
 
@@ -635,8 +671,8 @@ nav ul.header-links li.header-link:hover {
   }
 
   .about-me {
-    margin-top: -60px;
-    margin-bottom: 120px;
+    margin-top: 150px;
+    margin-bottom: 160px;
   }
 
   .about-me h2 {
@@ -693,7 +729,7 @@ nav ul.header-links li.header-link:hover {
   .card-works {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .card {
@@ -710,12 +746,12 @@ nav ul.header-links li.header-link:hover {
   }
 
   .contact-info {
-    width: 300px;
-    height: 156px;
+    width: 463px;
+    height: 256px;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 52px;
     text-align: left;
     margin-bottom: -40px;
@@ -787,7 +823,7 @@ nav ul.header-links li.header-link:hover {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin: 1px -145px 1px 82px;
+    margin: -4px -118px -36px 15px;
   }
 
   input[name="email"] {
@@ -827,22 +863,25 @@ nav ul.header-links li.header-link:hover {
     margin: 35px 175px 35px 0;
     border: none;
   }
-
   .email-id {
     display: none;
   }
 
   .contact-form {
     display: flex;
-    padding: 100px;
-    padding-bottom: 20px;
-    margin-bottom: -200px;
+    flex-direction: row;
+    padding: 60px;
+    padding-bottom: 39px;
+    margin-bottom: -390px;
   }
 
   .desktop-img-bottom {
     display: flex;
-    justify-content: center;
-    align-items: baseline;
+    align-items: center;
+    position: relative;
+    top: 290px;
+    left: -127px;
+    height: 10rem;
   }
 
   .bottomleft {
@@ -852,7 +891,7 @@ nav ul.header-links li.header-link:hover {
   .bottom1 {
     margin-right: 455px;
   }
-
+}
   @media (max-width: 767px) {
     .bottom-right {
       display: none;
@@ -861,10 +900,11 @@ nav ul.header-links li.header-link:hover {
 
   @media (min-width: 1024px) {
     .bottom-right {
-      padding-top: 10px;
-      width: auto;
-      height: auto;
       display: block;
+    position: relative;
+    top: 2.5rem;
+    right: -67px;
+    width: 15.25rem;
+    height: 16.94rem;
     }
   }
-}
