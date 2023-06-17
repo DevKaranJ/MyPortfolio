@@ -197,12 +197,12 @@ nav ul.header-links li.header-link:hover {
 }
 
 .project {
-width: 20rem;
-height: 29rem;
-border: 1px solid #d0d9d4;
-border-radius: 8px;
-display: flex;
-flex-direction: column;
+  width: 20rem;
+  height: 29rem;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-title {
@@ -507,11 +507,11 @@ flex-direction: column;
     padding-left: 260px;
     padding-right: 258px;
     background-position: center;
-}
+  }
 
-.myrecentworkline {
-  display: none;
-}
+  .myrecentworkline {
+    display: none;
+  }
 
   .first-heading h1 {
     text-align: center;
@@ -882,19 +882,19 @@ flex-direction: column;
   }
 }
 
-  @media (max-width: 767px) {
- .bottom-right {
- display: none;
-}
+@media (max-width: 767px) {
+  .bottom-right {
+    display: none;
+  }
 }
 
-  @media (min-width: 1024px) {
-    .bottom-right {
+@media (min-width: 1024px) {
+  .bottom-right {
     display: block;
     position: relative;
     top: 2.5rem;
     right: -67px;
     width: 15.25rem;
     height: 16.94rem;
- }
+  }
 }
