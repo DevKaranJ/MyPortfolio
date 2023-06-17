@@ -500,6 +500,7 @@ nav ul.header-links li.header-link:hover {
 
 @media (min-width: 768px) {
   .bck {
+    width: 100%;
     background: url(./resources/Header-llustration-desktop@2x.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -507,6 +508,11 @@ nav ul.header-links li.header-link:hover {
     padding-left: 260px;
     padding-right: 258px;
     background-position: center;
+  }
+
+  .intro {
+    display: flex;
+    justify-content: center;
   }
 
   .myrecentworkline {
@@ -531,7 +537,7 @@ nav ul.header-links li.header-link:hover {
 
   .content,
   .content p {
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 400;
     line-height: 28px;
     color: #172b4d;
@@ -551,14 +557,13 @@ nav ul.header-links li.header-link:hover {
     display: flex;
     justify-content: center;
     position: relative;
-    top: -84px;
+    top: -42px;
   }
 
   .social ul {
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin-top: 15px;
   }
 
   .social ul li {
@@ -641,6 +646,7 @@ nav ul.header-links li.header-link:hover {
 @media (min-width: 1024px) {
   .project-card {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     width: 100%;
@@ -738,8 +744,10 @@ nav ul.header-links li.header-link:hover {
 
   .card-works {
     display: grid;
+    justify-items: center;
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
+    width: 65%;
   }
 
   .card-works .card {
@@ -747,21 +755,22 @@ nav ul.header-links li.header-link:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 16rem;
-    height: 19rem;
+    width: 20rem;
+    height: 20rem;
     border: 1px solid #c1c7d0;
     background: #ebf0ee;
     border-radius: 8px;
+    gap: 10px;
   }
 
   .contact-info {
-    width: 333px;
+    width: 650px;
     height: 256px;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 29px;
-    line-height: 52px;
+    font-size: 42px;
+    line-height: 68px;
     text-align: left;
     margin-bottom: -40px;
   }
@@ -832,14 +841,15 @@ nav ul.header-links li.header-link:hover {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin: 6px -130px -63px 23px;
+    margin: 6px -130px -63px 50px;
+    max-width: 50rem
   }
 
   input[name="email"] {
     background: #fff;
     border: 1px solid #d0d9d4;
     border-radius: 4px;
-    width: 100%;
+    width: 130%;
     height: 48px;
     padding: 25px;
   }
@@ -848,7 +858,7 @@ nav ul.header-links li.header-link:hover {
     background: #fff;
     border: 1px solid #d0d9d4;
     border-radius: 4px;
-    width: 100%;
+    width: 130%;
     height: 48px;
     padding: 25px;
     font-family: 'inter', sans-serif;
@@ -857,9 +867,9 @@ nav ul.header-links li.header-link:hover {
   }
 
   textarea[name="message"] {
-    height: 100px;
+    height: 120px;
     background: #fff;
-    width: 100%;
+    width: 130%;
     border: 1px solid #60c095;
     border-radius: 4px;
     resize: both;
@@ -881,16 +891,16 @@ nav ul.header-links li.header-link:hover {
     display: flex;
     flex-direction: row;
     padding: 60px;
-    padding-bottom: 39px;
-    margin-bottom: -390px;
+    width: 100%;
+    height: 100%;
   }
 
   .desktop-img-bottom {
     display: flex;
     align-items: center;
     position: relative;
-    top: 290px;
-    left: 3px;
+    top: -886px;
+    left: -300px;
     height: 10rem;
   }
 
@@ -904,7 +914,7 @@ nav ul.header-links li.header-link:hover {
 
   .socialbottom {
     position: relative;
-    top: 360px;
+    top: 50px;
   }
 }
 
@@ -916,12 +926,12 @@ nav ul.header-links li.header-link:hover {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .bottom-right {
-    display: block;
+        display: block;
     position: relative;
-    top: -1.5rem;
-    right: -5px;
-    width: 13.25rem;
-    height: 22.939999999999998rem;
+    top: -0.5rem;
+    right: -219px;
+    width: 23.25rem;
+    height: 66.94rem;
   }
 }
 
@@ -929,10 +939,10 @@ nav ul.header-links li.header-link:hover {
   .bottom-right {
     display: block;
     position: relative;
-    top: 2.5rem;
-    right: -67px;
-    width: 15.25rem;
-    height: 16.94rem;
+    top: -0.5rem;
+    right: -219px;
+    width: 23.25rem;
+    height: 66.94rem;
   }
 }
 
@@ -1007,5 +1017,13 @@ nav ul.header-links li.header-link:hover {
     text-align: center;
     letter-spacing: 0.03em;
     transition: transform 0.3s ease;
+  }
+}
+ 
+@media (min-width: 768px) {
+  .footer {
+    padding: 1rem 0;
+    border-top: 1px solid #dfe1e6;
+    margin-top: -785px;
   }
 }
