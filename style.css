@@ -636,14 +636,28 @@ nav ul.header-links li.header-link:hover {
     left: 50%;
     transform: translateX(-50%);
   }
+}
 
+@media (min-width: 1024px) {
   .project-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 1000px;
-    width: 950px;
-    left: -27px;
-    top: 35px;
+    gap: 20px;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 35px;
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .project-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 35px;
     border-radius: 0;
   }
 }
@@ -715,12 +729,24 @@ nav ul.header-links li.header-link:hover {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .card-works .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    height: 19rem;
+    border: 1px solid #c1c7d0;
+    background: #ebf0ee;
+    border-radius: 8px;
+  }
+
   .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 18.44rem;
+    width: 15rem;
     height: 15.75rem;
     border: 1px solid #c1c7d0;
     background: #ebf0ee;
@@ -729,12 +755,12 @@ nav ul.header-links li.header-link:hover {
   }
 
   .contact-info {
-    width: 463px;
+    width: 333px;
     height: 256px;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 29px;
     line-height: 52px;
     text-align: left;
     margin-bottom: -40px;
@@ -806,7 +832,7 @@ nav ul.header-links li.header-link:hover {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin: -4px -118px -36px 15px;
+    margin: 6px -130px -63px 23px;
   }
 
   input[name="email"] {
@@ -864,7 +890,7 @@ nav ul.header-links li.header-link:hover {
     align-items: center;
     position: relative;
     top: 290px;
-    left: -127px;
+    left: 3px;
     height: 10rem;
   }
 
@@ -888,6 +914,17 @@ nav ul.header-links li.header-link:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .bottom-right {
+    display: block;
+    position: relative;
+    top: -1.5rem;
+    right: -5px;
+    width: 13.25rem;
+    height: 22.939999999999998rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .bottom-right {
     display: block;
@@ -898,3 +935,4 @@ nav ul.header-links li.header-link:hover {
     height: 16.94rem;
   }
 }
+
