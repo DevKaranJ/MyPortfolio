@@ -723,6 +723,19 @@ nav ul.header-links li.header-link:hover {
     background-size: cover;
   }
 
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 15.75rem;
+    border: 1px solid #c1c7d0;
+    background: #ebf0ee;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
   .card-works {
     display: grid;
     gap: 10px;
@@ -739,19 +752,6 @@ nav ul.header-links li.header-link:hover {
     border: 1px solid #c1c7d0;
     background: #ebf0ee;
     border-radius: 8px;
-  }
-
-  .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 15rem;
-    height: 15.75rem;
-    border: 1px solid #c1c7d0;
-    background: #ebf0ee;
-    border-radius: 8px;
-    margin-bottom: 10px;
   }
 
   .contact-info {
@@ -935,4 +935,3 @@ nav ul.header-links li.header-link:hover {
     height: 16.94rem;
   }
 }
-
