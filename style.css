@@ -552,7 +552,7 @@ nav ul.header-links li.header-link:hover {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 290px;
+    top: -84px;
   }
 
   .social ul {
@@ -569,22 +569,6 @@ nav ul.header-links li.header-link:hover {
   .scroll-button {
     display: flex;
   }
-
-  .socialtop {
-    display: flex;
-    justify-content: center;
-}
-
-.socialtop ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  margin-top: 1px;
-}
-
-.socialtop ul li {
-  margin: 0 15px;
-}
 }
 
 /* First page */
@@ -891,6 +875,11 @@ nav ul.header-links li.header-link:hover {
   .bottom1 {
     margin-right: 455px;
   }
+
+  .socialbottom {
+    position: relative;
+    top: 360px;
+  }
 }
   @media (max-width: 767px) {
     .bottom-right {
@@ -906,11 +895,5 @@ nav ul.header-links li.header-link:hover {
     right: -67px;
     width: 15.25rem;
     height: 16.94rem;
-    }
-  }
-
-  @media (min-width: 375px){
-    .socialtop {
-      display: none;
     }
   }
