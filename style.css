@@ -935,3 +935,78 @@ nav ul.header-links li.header-link:hover {
     height: 16.94rem;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .project-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Updated property */
+    gap: 15px;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 35px;
+    border-radius: 0;
+  }
+
+  .project {
+    width: 14.5rem;
+    height: 25rem;
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-title {
+    display: grid;
+    gap: 23px;
+    place-items: center;
+  }
+
+  .project-title h3 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    color: #172b4d;
+    line-height: 27px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    height: 57px;
+    width: 227px;
+  }
+
+  .project-title .language ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    padding: 9px 0;
+    margin: 0;
+    gap: 9px;
+    background: #ebf0ee;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 3%;
+    color: #3a4a42;
+  }
+
+  .project-button {
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #36b37e;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 10px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    transition: transform 0.3s ease;
+  }
+}
+
