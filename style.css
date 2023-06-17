@@ -176,7 +176,6 @@ nav ul.header-links li.header-link:hover {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0em;
   text-align: center;
   width: 447px;
   height: 48px;
@@ -198,12 +197,12 @@ nav ul.header-links li.header-link:hover {
 }
 
 .project {
-    width: 20rem;
-    height: 29rem;
-    border: 1px solid #d0d9d4;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
+width: 20rem;
+height: 29rem;
+border: 1px solid #d0d9d4;
+border-radius: 8px;
+display: flex;
+flex-direction: column;
 }
 
 .project-title {
@@ -213,7 +212,7 @@ nav ul.header-links li.header-link:hover {
 }
 
 .project-title h3 {
-  font-family: 'poppins';
+  font-family: 'poppins', sans-serif;
   font-style: bold;
   color: #172b4d;
   line-height: 32px;
@@ -847,6 +846,7 @@ nav ul.header-links li.header-link:hover {
     margin: 35px 175px 35px 0;
     border: none;
   }
+
   .email-id {
     display: none;
   }
@@ -881,19 +881,20 @@ nav ul.header-links li.header-link:hover {
     top: 360px;
   }
 }
+
   @media (max-width: 767px) {
-    .bottom-right {
-      display: none;
-    }
-  }
+ .bottom-right {
+ display: none;
+}
+}
 
   @media (min-width: 1024px) {
     .bottom-right {
-      display: block;
+    display: block;
     position: relative;
     top: 2.5rem;
     right: -67px;
     width: 15.25rem;
     height: 16.94rem;
-    }
-  }
+ }
+}
