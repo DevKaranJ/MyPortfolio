@@ -748,6 +748,7 @@ nav ul.header-links li.header-link:hover {
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
     width: 65%;
+    justify-content: center;
   }
 
   .card-works .card {
@@ -842,7 +843,7 @@ nav ul.header-links li.header-link:hover {
     flex-direction: column;
     gap: 12px;
     margin: 6px -130px -63px 50px;
-    max-width: 50rem
+    max-width: 50rem;
   }
 
   input[name="email"] {
@@ -926,7 +927,7 @@ nav ul.header-links li.header-link:hover {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .bottom-right {
-        display: block;
+    display: block;
     position: relative;
     top: -0.5rem;
     right: -219px;
@@ -958,7 +959,7 @@ nav ul.header-links li.header-link:hover {
   }
 
   .project {
-    width: 14.5rem;
+    width: 17.5rem;
     height: 25rem;
     border: 1px solid #d0d9d4;
     border-radius: 8px;
@@ -977,7 +978,7 @@ nav ul.header-links li.header-link:hover {
     font-style: normal;
     color: #172b4d;
     line-height: 27px;
-    font-size: 25px;
+    font-size: 27px;
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
@@ -992,11 +993,11 @@ nav ul.header-links li.header-link:hover {
     list-style-type: none;
     padding: 9px 0;
     margin: 0;
-    gap: 9px;
+    gap: 19px;
     background: #ebf0ee;
     border-radius: 4px;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 16px;
     letter-spacing: 3%;
     color: #3a4a42;
@@ -1010,7 +1011,7 @@ nav ul.header-links li.header-link:hover {
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
-    margin-top: 10px;
+    margin-top: -19px;
     line-height: 24px;
     display: flex;
     align-items: center;
@@ -1019,7 +1020,7 @@ nav ul.header-links li.header-link:hover {
     transition: transform 0.3s ease;
   }
 }
- 
+
 @media (min-width: 768px) {
   .footer {
     padding: 1rem 0;
