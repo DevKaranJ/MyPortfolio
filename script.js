@@ -1,11 +1,4 @@
-document.querySelector('.hammenu').addEventListener('click', function() {
-    this.classList.toggle('is-active');
-  });
-  
-  const menu_btn = document.querySelector('.hamburger');
-	const mobile_menu = document.querySelector('.mobile-nav');
-
-	document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
         var hamburger = document.querySelector('.hammenu');
         var menuContent = document.querySelector('#menuContent');
       
@@ -14,5 +7,13 @@ document.querySelector('.hammenu').addEventListener('click', function() {
         });
       });
       
-    
+      document.addEventListener("DOMContentLoaded", function() {
+        const menuContent = document.getElementById("menuContent");
+        const closeButton = document.querySelector(".close-button");
+      
+        closeButton.addEventListener("click", function() {
+          menuContent.classList.remove("show");
+        });
+      });
+      
       
