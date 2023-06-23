@@ -221,18 +221,19 @@
                                       </ul>
                                     </div>
                                   </section>
-                                             <!-- contact form Start-->
+                                             <!-- contact form Start -->
                                              <div class="contact-form">
                                               <p class="contact-info">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-                                              <form action="https://formspree.io/f/mvonjjzg" method="post" class="formspree">
+                                              <form action="https://formspree.io/f/mvonjjzg" method="post" class="formspree" id="contactForm">
                                                 <label>
                                                   <input type="text" name="name" placeholder="Full name" maxlength="30" required>
                                                 </label>
                                                 <label>
                                                   <input type="email" name="email" placeholder="Email address" required>
+                                                  <span id="errorEmail" class="error"></span>
                                                 </label>
                                                 <label>
-                                                  <textarea name="message" placeholder="Hey i'd like to connect to..." maxlength="500" required></textarea>
+                                                  <textarea name="message" placeholder="Hey, I'd like to connect..." maxlength="500" required></textarea>
                                                 </label>
                                                 <button type="submit" class="submit-button">
                                                   <img src="./resources/getintouch.svg" alt="getintouch">
@@ -242,7 +243,7 @@
                                                 <img src="./resources/contact form-illustratoin-3-desktop.svg" alt="bottom-right">
                                               </div>
                                             </div>
-                                             <!-- contact form End-->
+                                            <!-- contact form End -->
                                             <div class="desktop-img-bottom">
                                             <div class="bottomleft">
                                               <img src="./resources/bottomleft.svg" alt="bottomleft">
@@ -273,5 +274,6 @@
                                                 </div>
                                                 </footer>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>
