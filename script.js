@@ -5,8 +5,14 @@ document.querySelector('.hammenu').addEventListener('click', function() {
   const menu_btn = document.querySelector('.hamburger');
 	const mobile_menu = document.querySelector('.mobile-nav');
 
-	function toggleMenu() {
-        var menuContent = document.getElementById("menuContent");
-        menuContent.classList.toggle("show");
-      }
+	document.addEventListener('DOMContentLoaded', function() {
+        var hamburger = document.querySelector('.hammenu');
+        var menuContent = document.querySelector('#menuContent');
+      
+        hamburger.addEventListener('click', function() {
+          menuContent.classList.toggle('show');
+        });
+      });
+      
+    
       

@@ -136,20 +136,18 @@ nav ul.header-links li.header-link:hover {
 
 .menu-content {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: #fff;
   padding: 20px;
+  z-index: 9999;
 }
 
 .menu-content.show {
   display: block;
-}
-
-.hammenu .bar {
-  background-color: #28352f;
-}
-
-.hammenu .bar.close {
-  background-color: #93A79D;
 }
 
 
