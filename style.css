@@ -176,7 +176,9 @@ nav ul.header-links li.header-link:hover {
   font-weight: 600;
   line-height: 44px;
 }
-
+ .menuItem {
+  color: #3a4a42;
+ }
 
 /* Mobile devices */
 @media (min-width: 375px) {
