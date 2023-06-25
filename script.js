@@ -10,4 +10,3 @@ const closeButton = document.querySelector('.close-button');
 closeButton.addEventListener('click', () => {
   menuContent.classList.remove('show');
 });
-    
