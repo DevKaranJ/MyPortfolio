@@ -12,4 +12,10 @@ closeButton.addEventListener('click', () => {
 });
 
 //copy the code below this line 
+const menuItems = document.querySelectorAll('.menuItem a');
 
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener('click', () => {
+    menuContent.classList.remove('show');
+  });
+});
