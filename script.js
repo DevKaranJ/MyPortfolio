@@ -1,3 +1,5 @@
+// Mobile-Menu
+
 const hamburger = document.querySelector('.hammenu');
 const menuContent = document.querySelector('#menuContent');
 
@@ -17,4 +19,22 @@ menuItems.forEach((menuItem) => {
   menuItem.addEventListener('click', () => {
     menuContent.classList.remove('show');
   });
+});
+
+// Form Validation
+
+const form = document.getElementById("contactForm");
+const emailInput = document.querySelector("input[name='email']");
+const errorEmail = document.getElementById("errorEmail");
+//
+
+//
+  const emailValue = emailInput.value;
+
+  if (emailValue.toLowerCase() !== emailValue) {
+    errorEmail.textContent = "Email must be in lowercase.";
+  } else {
+    errorEmail.textContent = ""; 
+    form.submit();
+  }
 });
