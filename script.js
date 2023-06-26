@@ -11,7 +11,6 @@ closeButton.addEventListener('click', () => {
   menuContent.classList.remove('show');
 });
 
-//copy the code below this line 
 const menuItems = document.querySelectorAll('.menuItem a');
 
 menuItems.forEach((menuItem) => {
