@@ -37,4 +37,3 @@ const errorEmail = document.getElementById("errorEmail");
     errorEmail.textContent = ""; 
     form.submit();
   }
-});
