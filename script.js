@@ -26,9 +26,10 @@ menuItems.forEach((menuItem) => {
 const form = document.getElementById("contactForm");
 const emailInput = document.querySelector("input[name='email']");
 const errorEmail = document.getElementById("errorEmail");
-//
 
-//
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
   const emailValue = emailInput.value;
 
   if (emailValue.toLowerCase() !== emailValue) {
@@ -37,3 +38,4 @@ const errorEmail = document.getElementById("errorEmail");
     errorEmail.textContent = ""; 
     form.submit();
   }
+};
