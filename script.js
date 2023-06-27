@@ -39,3 +39,27 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+// preserve data in the browser
+
+const contactForm = document.getElementById("contactForm");
+
+function saveFormData() {
+  const formData = {
+    email: contactForm.querySelector("[name='email']").value,
+  };
+
+  localStorage.setItem("contactFormData", JSON.stringify(formData));
+}
+
+//  //
+
+function loadFormData() {
+  const formData = JSON.parse(localStorage.getItem("contactFormData"));
+
+  if (formData) {
+    contactForm.querySelector("[name='email']").value = formData.email;
+  }
+}
+
+loadFormData();
