@@ -38,4 +38,4 @@ form.addEventListener("submit", function(event) {
     errorEmail.textContent = ""; 
     form.submit();
   }
-};
+});
