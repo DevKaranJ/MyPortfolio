@@ -40,9 +40,9 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-// preserve data in the browser
+// Preserve data in the browser
 
-const contactForm = document.getElementById("contactForm");
+const contactForm = document.getElementById('contactForm');
 
 function saveFormData() {
   const formData = {
@@ -51,11 +51,11 @@ function saveFormData() {
     message: contactForm.querySelector("[name='message']").value,
   };
 
-  localStorage.setItem("contactFormData", JSON.stringify(formData));
+  localStorage.setItem('contactFormData', JSON.stringify(formData));
 }
 
 function loadFormData() {
-  const formData = JSON.parse(localStorage.getItem("contactFormData"));
+  const formData = JSON.parse(localStorage.getItem('contactFormData'));
 
   if (formData) {
     contactForm.querySelector("[name='name']").value = formData.name;
