@@ -24,7 +24,7 @@ menuItems.forEach((menuItem) => {
 // Form Validation
 
 const form = document.getElementById('contactForm');
-const emailInput = document.querySelector("input[name='email']");
+const emailInput = document.querySelector(`input[name='email']`);
 const errorEmail = document.getElementById('errorEmail');
 
 form.addEventListener('submit', (event) => {
@@ -46,19 +46,17 @@ const contactForm = document.getElementById("contactForm");
 
 function saveFormData() {
   const formData = {
-    email: contactForm.querySelector("[name='email']").value,
+    email: contactForm.querySelector(`input[name='email']`).value,
   };
 
   localStorage.setItem("contactFormData", JSON.stringify(formData));
 }
 
-contactForm.addEventListener(input, saveFormData);
-
 function loadFormData() {
   const formData = JSON.parse(localStorage.getItem("contactFormData"));
 
   if (formData) {
-    contactForm.querySelector("[name='email']").value = formData.email;
+    contactForm.querySelector(`input[name='email']`).value = formData.email;
   }
 }
 
