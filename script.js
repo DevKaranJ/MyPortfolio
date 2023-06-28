@@ -37,7 +37,6 @@ form.addEventListener("submit", function(event) {
   } else {
     errorEmail.textContent = "";
     form.submit();
-    saveFormData();
   }
 });
 
@@ -55,6 +54,8 @@ function saveFormData() {
   localStorage.setItem('contactFormData', JSON.stringify(formData));
 }
 
+contactForm.addEventListener("input", saveFormData);
+
 function loadFormData() {
   const formData = JSON.parse(localStorage.getItem('contactFormData'));
 
@@ -66,4 +67,3 @@ function loadFormData() {
 }
 
 loadFormData();
-saveFormData();
