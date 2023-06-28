@@ -23,19 +23,19 @@ menuItems.forEach((menuItem) => {
 
 // Form Validation
 
-const form = document.getElementById("contactForm");
+const form = document.getElementById('contactForm');
 const emailInput = document.querySelector("input[name='email']");
-const errorEmail = document.getElementById("errorEmail");
+const errorEmail = document.getElementById('errorEmail');
 
-form.addEventListener("submit", function(event) {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
 
   const emailValue = emailInput.value;
 
   if (emailValue.toLowerCase() !== emailValue) {
-    errorEmail.textContent = "Email must be in lowercase.";
+    errorEmail.textContent = 'Email must be in lowercase.';
   } else {
-    errorEmail.textContent = "";
+    errorEmail.textContent = '';
     form.submit();
   }
 });
@@ -54,7 +54,7 @@ function saveFormData() {
   localStorage.setItem('contactFormData', JSON.stringify(formData));
 }
 
-contactForm.addEventListener("input", saveFormData);
+contactForm.addEventListener('input', saveFormData);
 
 function loadFormData() {
   const formData = JSON.parse(localStorage.getItem('contactFormData'));
