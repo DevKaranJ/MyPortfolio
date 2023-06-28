@@ -37,6 +37,7 @@ form.addEventListener("submit", function(event) {
   } else {
     errorEmail.textContent = "";
     form.submit();
+    saveFormData();
   }
 });
 
@@ -65,3 +66,4 @@ function loadFormData() {
 }
 
 loadFormData();
+saveFormData();
