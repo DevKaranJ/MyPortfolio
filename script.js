@@ -46,7 +46,9 @@ const contactForm = document.getElementById("contactForm");
 
 function saveFormData() {
   const formData = {
+    name: contactForm.querySelector("[name='name']").value,
     email: contactForm.querySelector(`input[name='email']`).value,
+    message: contactForm.querySelector("[name='message']").value,
   };
 
   localStorage.setItem("contactFormData", JSON.stringify(formData));
@@ -56,7 +58,9 @@ function loadFormData() {
   const formData = JSON.parse(localStorage.getItem("contactFormData"));
 
   if (formData) {
+    contactForm.querySelector("[name='name']").value = formData.name;
     contactForm.querySelector(`input[name='email']`).value = formData.email;
+    contactForm.querySelector("[name='message']").value = formData.message;
   }
 }
 
