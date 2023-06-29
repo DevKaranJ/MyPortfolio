@@ -54,7 +54,7 @@ function saveFormData() {
   localStorage.setItem('contactFormData', JSON.stringify(formData));
 }
 
-
+contactForm.addEventListener('input', saveFormData);
 
 function loadFormData() {
   const formData = JSON.parse(localStorage.getItem('contactFormData'));
