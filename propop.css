@@ -1,0 +1,154 @@
+/* Project Cards */
+.modal-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: auto;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+}
+
+.card-holder {
+    /* Styles for the card holder element */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 4% 0;
+  }
+  
+  .card {
+    /* Styles for the card element */
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+    height: 490px;
+    overflow: hidden;
+    background-color: #ebf0ee;
+    margin: 8px;
+  }
+  
+  .empty-box {
+    /* Styles for the empty box element */
+    height: 45%;
+  width: 100%;
+  background: #ebf0ee;
+  border-radius: 8px 8px 0 0;
+  }
+  
+  .Project-name {
+    /* Styles for the multi-post-stories element */
+    display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 55%;
+  gap: 20px;
+  padding: 0 0.5em;
+  border-radius: 14px;
+  background-color: #fff;
+  }
+
+  .Project-name h3 {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    color: #3a4a42;
+    text-align: center;
+  }
+  .programming-languages {
+    /* Styles for the programming languages element */
+    display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  width: 100%;
+  }
+  
+  .programming-languages ul {
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .programming-languages ul li {
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: #ebf0ee;
+    padding: 6px;
+    color: #3a4a42;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .green-button {
+    /* Styles for the green button element */
+    float: right;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    background: #36b37f;
+    border-radius: 4px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    border: none;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-decoration: none;
+  }
+  
+  /* Popups */
+  .popup-card-holder {
+    /* Styles for the popup card holder element */
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: #c1c7d090;
+    align-items: center;
+    justify-content: center;  
+}
+  
+  .popup-card {
+    /* Styles for the popup card element */
+  }
+  
+  .popup-close {
+    /* Styles for the popup close button */
+  }
+  
+  .popup-img-box {
+    /* Styles for the popup image box */
+  }
+  
+  .popup-body {
+    /* Styles for the popup body element */
+  }
+  
+  .popup-head {
+    /* Styles for the popup head element */
+  }
+  
+  .popup-links-desktop {
+    /* Styles for the popup links on desktop */
+  }
+  
+  .popup-programming-languages {
+    /* Styles for the popup programming languages element */
+  }
+  
+  .popup-links-mobile {
+    /* Styles for the popup links on mobile */
+  }
+  
